@@ -1,4 +1,4 @@
-# Directed Sentiment Extraction to Question-Answering (DSE2QA)
+# Directed Sentiment Analysis in Political News
 
 This repository provides a dataset and code for inferring sentiment relationships between political entities in news text.
 
