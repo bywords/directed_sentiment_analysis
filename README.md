@@ -1,4 +1,4 @@
-# Directed Sentiment Analysis in Political News
+# Directed Sentiment Analysis in News Text
 
 This repository provides a dataset and code for inferring sentiment relationships between political entities in news text.
 
