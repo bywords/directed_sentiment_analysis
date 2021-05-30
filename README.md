@@ -46,9 +46,7 @@ Required parameters:
 
 ## Reference
 
-You can get more information on the dataset and method in [our paper](). 
-
-You can use the resources for your projects by citing the paper.
+You can get more information on the dataset and method in [our paper]() in ACL'21. You can use the resources for your purposes by citing the paper.
 
 ```
 @inproceedings{park2021directed,
