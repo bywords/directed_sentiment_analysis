@@ -2,7 +2,7 @@
 
 This repository provides a dataset and code for inferring sentiment relationships between political entities in news text.
 
-## Problem
+## Task
 
 Given a sentence *s* that contains two entities *p* and *q*, the problem aims to detect the sentiment relation from *p* to *q* among five classes: neutral, *p* holds a positive or negative opinion towards *q*, and the reverse direction. 
 
