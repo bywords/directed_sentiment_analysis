@@ -6,7 +6,7 @@ This repository provides a dataset and code for inferring sentiment relationship
 
 Given a sentence *s* that contains two entities *p* and *q*, the problem aims to detect the sentiment relation from *p* to *q* among five classes: neutral, *p* holds a positive or negative opinion towards *q*, and the reverse direction. 
 
-For example, for a given sentence like ```Donald Trump emphatically blamed China for the coronavirus pandemic```, a model is required to understand Trump is the source of the negative sentiment toward China, by predicting a sentiment type among the five classes: **neutral**, **positive** (*p*->*q*), **positive** (*p*<-*q*), **negative** (*p*->*q*), and **negative** (*p*<-*q*). That is, the predicted class should be negative (*p*->*q*) for the above sentence.
+For example, for a given sentence like ```Donald Trump emphatically blamed China for the coronavirus pandemic```, a model is required to understand Trump is the source of the negative sentiment toward China by predicting a sentiment type among the five classes. The answer is "*p* holds a negative opinion toward *q*."
 
 ## Data
 
@@ -20,11 +20,11 @@ We construct a dataset of 16,288 sentences by collecting news articles and crowd
 | negative (*p*->*q*) | 3,163 |
 | negative (*p*<-*q*) | 478 |
 
-We split the dataset into 13144, 1461, and 1623 instances for train, validation, and test set through stratified split. We also provide resampled versions of training sets for experimental purposes.
+We split the dataset into 13144, 1461, and 1623 instances for train, validation, and test set through a stratified split. We also provide resampled versions of training sets for experimental purposes.
 
 ## Model
 
-To solve the problem, we present an approach of utilizing pretrained BERT-like transformer models (e.g., RoBERTa). We transform the task into the multiple sub-tasks aiming for answering yes/no questions on whether a target sentiment is embedded in the text. The basic idea is we inquire an intelligent machine who can answer yes/no questions on whether a target sentiment exists and then combine the answers corresponding to the each sentiment class for making a final guess. 
+We present a new approach of utilizing pretrained BERT-like transformer models (e.g., RoBERTa). We transform the task into multiple sub-tasks to answer yes/no questions on whether a target sentiment is embedded in the text. The basic idea is we inquire about an intelligent machine that can answer yes/no questions on whether a target sentiment exists and then combine the answers corresponding to each sentiment class for making a final guess. 
 
 We present the overall framework in the following figure. Technically, taking auxiliary input in BERT-like transformers enables implementing the intelligent machine by making a different prediction with the same sentence input, according to the question fed as additional input. 
 
@@ -58,3 +58,5 @@ You can use the resources for your projects by citing the paper.
   year={2021}
 }
 ```
+
+
