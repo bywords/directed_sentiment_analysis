@@ -6,7 +6,7 @@ This repository provides a dataset and code for inferring sentiment relationship
 
 Given a sentence *s* that contains two entities *p* and *q*, the problem aims to detect the sentiment relation from *p* to *q* among five classes: neutral, *p* holds a positive or negative opinion towards *q*, and the reverse direction. 
 
-For example, for a given sentence like ```Donald Trump emphatically blamed China for the coronavirus pandemic```, a model is required to understand Trump is the source of the negative sentiment toward China by predicting a sentiment type among the five classes. The answer is "*p* holds a negative opinion toward *q*."
+For example, for a given sentence like ```Donald Trump emphatically blamed China for the coronavirus pandemic```, a model is required to understand Trump is the source of the negative sentiment toward China by predicting a type among the five sentiment classes. The answer is "*p* holds a negative opinion toward *q*."
 
 ## Data
 
