@@ -50,7 +50,7 @@ You can get more information on the dataset and method in our upcoming paper in 
 
 ```
 @inproceedings{park2021directed,
-  title={Who Blames or Endorses Whom? Entity-to-Entity Directed Sentiment Analysis in News Text},
+  title={Who Blames or Endorses Whom? Entity-to-Entity Directed Sentiment Extraction in News Text},
   author={Park, Kunwoo and Pan, Zhufeng and Joo, Jungseock},
   booktitle={Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 13th International Joint Conference on Natural Language Processing},
   year={2021}
